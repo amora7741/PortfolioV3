@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mouse-cursor {
+  display: none; /* Hide by default */
+}
+
+@media (hover: hover) {
+  .mouse-cursor {
+    display: block; /* Show only on hover-capable devices */
+  }
+}

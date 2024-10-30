@@ -2,7 +2,7 @@ import SocialIcons from "./SocialIcons";
 
 const Header = () => {
   return (
-    <header className="flex flex-col justify-between lg:w-1/2 lg:py-24">
+    <header className="sticky top-0 flex h-screen flex-col justify-between lg:w-1/2 lg:py-24">
       <div className="flex flex-col gap-3">
         <h1 className="text-3xl font-bold tracking-tighter md:text-4xl lg:text-5xl">
           Alejandro Mora-Lopez

@@ -1,5 +1,7 @@
+import { socialLinks } from "@/data";
+
 const SocialIcons = () => {
-  return <div>SocialIcons</div>;
+  return <div></div>;
 };
 
 export default SocialIcons;

@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const MouseCursor = ({ position }: { position: { x: number; y: number } }) => (
   <div
-    className="mouse-cursor pointer-events-none absolute -z-50 size-[50rem] rounded-full"
+    className="mouse-cursor pointer-events-none fixed -z-50 size-[50rem] rounded-full"
     style={{
       left: position.x,
       top: position.y,
@@ -40,7 +40,7 @@ const MouseHoverWrapper = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div
-      className="relative h-screen w-screen overflow-hidden"
+      className="relative h-screen w-screen overflow-x-hidden"
       ref={containerRef}
     >
       <MouseCursor position={position} />

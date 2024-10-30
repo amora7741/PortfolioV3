@@ -1,6 +1,7 @@
 import { IconType } from "react-icons";
 
-type SocialLink = {
+type SocialItem = {
+  isLink: boolean;
   name: string;
   url?: string;
   icon: IconType;

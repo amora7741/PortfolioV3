@@ -25,3 +25,22 @@ export const socialItems: SocialItem[] = [
     },
   },
 ];
+
+export const experienceItems: ExperienceItem[] = [
+  {
+    company: "UpUnikSelf Inc.",
+    position: "Frontend Developer",
+    startDate: "Sep",
+    endDate: "Oct 2024",
+    description:
+      "Collaborated with a development team of 8 to enhance the user interface of the company webiste.",
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+      "JavaScript",
+    ],
+    website: "https://www.upunikself.xyz/",
+  },
+];

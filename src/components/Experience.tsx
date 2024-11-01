@@ -1,3 +1,5 @@
+import { experienceItems } from "@/data";
+
 const Experience = () => {
   return (
     <section id="experience" className="flex flex-col gap-4">

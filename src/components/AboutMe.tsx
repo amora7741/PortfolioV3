@@ -1,7 +1,7 @@
 const AboutMe = () => {
   return (
     <section id="about-me" className="flex flex-col gap-4">
-      <h1 className="hidden">About Me</h1>
+      <h1 className="font-bold uppercase lg:hidden">About Me</h1>
       <p>
         From a young age, I&apos;ve had a fascination with web development and
         the idea of writing code to bring ideas to life on a screen. This

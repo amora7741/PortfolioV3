@@ -11,7 +11,7 @@ const Header = () => {
         <p className="max-w-xs">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
-        <nav className="mt-16 hidden lg:block">
+        <nav className="mt-16 hidden xl:block">
           <ul>
             <li>Test</li>
             <li>Test</li>

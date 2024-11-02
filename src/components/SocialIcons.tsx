@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const SocialIcons = () => {
   return (
-    <div className="flex items-center gap-4">
+    <div className="mx-1 flex items-center gap-4">
       {socialItems.map((item) => (
         <Button
           asChild={item.isLink}

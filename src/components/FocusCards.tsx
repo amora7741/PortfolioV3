@@ -25,7 +25,7 @@ export const Card = React.memo(
       onMouseEnter={() => setHovered(index)}
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "group -mx-4 flex items-baseline gap-36 rounded-md p-4 transition hover:bg-gray-200/20 lg:gap-8",
+        "group -mx-4 flex items-baseline gap-36 rounded-sm p-4 backdrop-blur-sm transition hover:bg-gray-200/20 lg:gap-8",
         hovered !== null && hovered !== index && "opacity-30",
       )}
     >
@@ -45,6 +45,16 @@ export const Card = React.memo(
           />
         </h1>
         <p className="text-pretty">{card.description}</p>
+        <ul className="mt-1 flex flex-wrap gap-2">
+          {card.technologies.map((technology, index) => (
+            <li
+              key={index}
+              className="rounded-full bg-slate-300/20 px-3 py-1 text-sm font-medium leading-5 text-blue-700 transition-colors group-hover:bg-blue-400/10"
+            >
+              {technology}
+            </li>
+          ))}
+        </ul>
       </div>
     </Link>
   ),

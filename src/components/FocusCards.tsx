@@ -12,11 +12,13 @@ export const Card = React.memo(
     index,
     hovered,
     setHovered,
+    variant = "experience",
   }: {
-    card: ExperienceItem;
+    card: ExperienceItem | ProjectItem;
     index: number;
     hovered: number | null;
     setHovered: React.Dispatch<React.SetStateAction<number | null>>;
+    variant?: "experience" | "project";
   }) => (
     <Link
       href={card.website!}
@@ -29,15 +31,20 @@ export const Card = React.memo(
         hovered !== null && hovered !== index && "opacity-30",
       )}
     >
-      <div className="min-w-fit">
-        <p className="text-sm uppercase">
-          {card.startDate} - {card.endDate}
-        </p>
-      </div>
+      {variant === "experience" && (card as ExperienceItem).startDate && (
+        <div className="min-w-fit">
+          <p className="text-sm uppercase">
+            {(card as ExperienceItem).startDate} -{" "}
+            {(card as ExperienceItem).endDate}
+          </p>
+        </div>
+      )}
       <div className="flex grow flex-col gap-2">
         <h1 className="flex gap-2 text-lg font-semibold group-hover:text-blue-700">
           <p>
-            {card.position} · {card.company}
+            {variant === "experience"
+              ? `${(card as ExperienceItem).position} · ${(card as ExperienceItem).company}`
+              : (card as ProjectItem).title}
           </p>
           <GoArrowUpRight
             strokeWidth={0.7}
@@ -62,7 +69,13 @@ export const Card = React.memo(
 
 Card.displayName = "Card";
 
-const FocusCards = ({ cards }: { cards: ExperienceItem[] }) => {
+const FocusCards = ({
+  cards,
+  variant = "experience",
+}: {
+  cards: (ExperienceItem | ProjectItem)[];
+  variant?: "experience" | "project";
+}) => {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
@@ -74,6 +87,7 @@ const FocusCards = ({ cards }: { cards: ExperienceItem[] }) => {
           index={index}
           hovered={hovered}
           setHovered={setHovered}
+          variant={variant}
         />
       ))}
     </div>

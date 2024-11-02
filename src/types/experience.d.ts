@@ -1,8 +1,4 @@
-type ExperienceItem = {
-  company: string;
-  position: string;
-  startDate: string;
-  endDate: string;
+type BaseItem = {
   description: string;
   technologies: string[];
   website?: string;
@@ -10,4 +6,15 @@ type ExperienceItem = {
     name: string;
     url: string;
   }[];
+};
+
+type ExperienceItem = BaseItem & {
+  company: string;
+  position: string;
+  startDate: string;
+  endDate: string;
+};
+
+type ProjectItem = BaseItem & {
+  title: string;
 };

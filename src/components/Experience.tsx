@@ -6,8 +6,8 @@ import FocusCards from "./FocusCards";
 
 const Experience = () => {
   return (
-    <section id="experience" className="flex flex-col gap-4">
-      <h1 className="font-bold uppercase lg:hidden">Experience</h1>
+    <section id="experience" className="flex flex-col xl:gap-4">
+      <h1 className="font-bold uppercase xl:hidden">Experience</h1>
 
       <FocusCards cards={experienceItems} />
 

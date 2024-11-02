@@ -34,7 +34,7 @@ export const Card = React.memo(
       {variant === "experience" && (card as ExperienceItem).startDate && (
         <div className="min-w-fit">
           <p className="text-sm uppercase">
-            {(card as ExperienceItem).startDate} -{" "}
+            {(card as ExperienceItem).startDate} —{" "}
             {(card as ExperienceItem).endDate}
           </p>
         </div>

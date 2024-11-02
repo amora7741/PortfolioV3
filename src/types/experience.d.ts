@@ -17,4 +17,5 @@ type ExperienceItem = BaseItem & {
 
 type ProjectItem = BaseItem & {
   title: string;
+  photoUrl: string;
 };

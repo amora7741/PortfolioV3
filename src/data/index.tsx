@@ -64,6 +64,7 @@ export const projectItems: ProjectItem[] = [
       },
     ],
     website: "https://real-time-chat-orpin.vercel.app/",
+    photoUrl: "/RealTimeChat.png",
   },
   {
     title: "X Clone",
@@ -72,6 +73,7 @@ export const projectItems: ProjectItem[] = [
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "SASS"],
     links: [{ name: "GitHub", url: "https://github.com/amora7741/XClone" }],
     website: "https://x-clone-mocha.vercel.app/",
+    photoUrl: "/XClone.png",
   },
   {
     title: "Where's Waldo?",
@@ -85,6 +87,7 @@ export const projectItems: ProjectItem[] = [
       },
     ],
     website: "https://photo-tagging-frontend.vercel.app/",
+    photoUrl: "/WheresWaldo.png",
   },
   {
     title: "Breeze",
@@ -98,6 +101,7 @@ export const projectItems: ProjectItem[] = [
       },
     ],
     website: "https://shopping-app-rose-gamma.vercel.app/",
+    photoUrl: "/Breeze.png",
   },
   {
     title: "Memory Game",
@@ -111,5 +115,6 @@ export const projectItems: ProjectItem[] = [
       },
     ],
     website: "https://memory-game-six-alpha.vercel.app/",
+    photoUrl: "/MemoryGame.png",
   },
 ];

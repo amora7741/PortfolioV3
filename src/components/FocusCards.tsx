@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useState } from "react";
@@ -27,17 +28,23 @@ export const Card = React.memo(
       onMouseEnter={() => setHovered(index)}
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "group -mx-4 flex items-baseline gap-36 rounded-sm p-4 backdrop-blur-sm transition hover:bg-gray-200/20 lg:gap-8",
+        "group -mx-4 grid grid-cols-[200px_1fr] gap-5 rounded-sm p-4 backdrop-blur-sm transition hover:bg-gray-200/20 lg:grid-cols-[150px_1fr]",
         hovered !== null && hovered !== index && "opacity-30",
       )}
     >
-      {variant === "experience" && (card as ExperienceItem).startDate && (
-        <div className="min-w-fit">
-          <p className="text-sm uppercase">
-            {(card as ExperienceItem).startDate} —{" "}
-            {(card as ExperienceItem).endDate}
-          </p>
-        </div>
+      {variant === "experience" ? (
+        <p className="mt-1 text-sm uppercase tracking-wide">
+          {(card as ExperienceItem).startDate} —{" "}
+          {(card as ExperienceItem).endDate}
+        </p>
+      ) : (
+        <Image
+          src={(card as ProjectItem).photoUrl}
+          alt={(card as ProjectItem).title}
+          className="mt-1 h-auto w-full rounded-sm object-cover"
+          width={200}
+          height={200}
+        />
       )}
       <div className="flex grow flex-col gap-2">
         <h1 className="flex gap-2 text-lg font-semibold group-hover:text-blue-700">

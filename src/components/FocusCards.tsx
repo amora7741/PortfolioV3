@@ -28,12 +28,12 @@ export const Card = React.memo(
       onMouseEnter={() => setHovered(index)}
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "group -mx-4 grid grid-cols-[200px_1fr] gap-5 rounded-sm p-4 backdrop-blur-sm transition hover:bg-gray-200/20 xl:grid-cols-[110px_1fr]",
+        "group -mx-4 grid gap-2 rounded-sm p-4 backdrop-blur-sm transition hover:bg-gray-200/20 sm:grid-cols-[200px_1fr] sm:gap-5 xl:grid-cols-[110px_1fr]",
         hovered !== null && hovered !== index && "opacity-30",
       )}
     >
       {variant === "experience" ? (
-        <p className="mt-1 text-xs uppercase tracking-wide">
+        <p className="text-xs uppercase tracking-wide sm:mt-1">
           {(card as ExperienceItem).startDate} —{" "}
           {(card as ExperienceItem).endDate}
         </p>
@@ -41,9 +41,9 @@ export const Card = React.memo(
         <Image
           src={(card as ProjectItem).photoUrl}
           alt={(card as ProjectItem).title}
-          className="mt-1 h-auto w-full rounded-sm border-2 object-cover transition-colors group-hover:border-blue-700/50"
-          width={200}
-          height={200}
+          className="order-last mt-1 h-auto w-full max-w-60 rounded-sm border-2 object-cover transition-colors group-hover:border-blue-700/50 sm:order-none"
+          width={1920}
+          height={1080}
         />
       )}
       <div className="flex grow flex-col gap-2">
@@ -59,7 +59,7 @@ export const Card = React.memo(
           />
         </h1>
         <p className="text-pretty">{card.description}</p>
-        <ul className="mt-1 flex flex-wrap gap-2">
+        <ul className="flex flex-wrap gap-2 sm:mt-1">
           {card.technologies.map((technology, index) => (
             <li
               key={index}
@@ -86,7 +86,7 @@ const FocusCards = ({
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-6 sm:gap-2">
       {cards.map((card, index) => (
         <Card
           key={index}

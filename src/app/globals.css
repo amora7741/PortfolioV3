@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 .mouse-cursor {
-  display: none; /* Hide by default */
+  display: none;
 }
 
 @media (hover: hover) {
   .mouse-cursor {
-    display: block; /* Show only on hover-capable devices */
+    display: block;
   }
 }
 

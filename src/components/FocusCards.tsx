@@ -47,7 +47,7 @@ export const Card = React.memo(
         />
       )}
       <div className="flex grow flex-col gap-2">
-        <h1 className="flex gap-2 text-lg font-semibold group-hover:text-blue-700">
+        <h1 className="flex gap-2 text-base font-semibold group-hover:text-blue-700">
           <p>
             {variant === "experience"
               ? `${(card as ExperienceItem).position} · ${(card as ExperienceItem).company}`
@@ -58,7 +58,9 @@ export const Card = React.memo(
             className="-translate-x-1 translate-y-1.5 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"
           />
         </h1>
-        <p className="text-pretty">{card.description}</p>
+        <p className="text-pretty text-sm leading-normal tracking-[0.015em]">
+          {card.description}
+        </p>
         <ul className="flex flex-wrap gap-2 sm:mt-1">
           {card.technologies.map((technology, index) => (
             <li

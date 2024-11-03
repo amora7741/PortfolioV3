@@ -28,12 +28,12 @@ export const Card = React.memo(
       onMouseEnter={() => setHovered(index)}
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "group -mx-4 grid grid-cols-[200px_1fr] gap-5 rounded-sm p-4 backdrop-blur-sm transition hover:bg-gray-200/20 lg:grid-cols-[150px_1fr]",
+        "group -mx-4 grid grid-cols-[200px_1fr] gap-5 rounded-sm p-4 backdrop-blur-sm transition hover:bg-gray-200/20 xl:grid-cols-[110px_1fr]",
         hovered !== null && hovered !== index && "opacity-30",
       )}
     >
       {variant === "experience" ? (
-        <p className="mt-1 text-sm uppercase tracking-wide">
+        <p className="mt-1 text-xs uppercase tracking-wide">
           {(card as ExperienceItem).startDate} —{" "}
           {(card as ExperienceItem).endDate}
         </p>
@@ -41,7 +41,7 @@ export const Card = React.memo(
         <Image
           src={(card as ProjectItem).photoUrl}
           alt={(card as ProjectItem).title}
-          className="mt-1 h-auto w-full rounded-sm object-cover"
+          className="mt-1 h-auto w-full rounded-sm border-2 object-cover transition-colors group-hover:border-blue-700/50"
           width={200}
           height={200}
         />

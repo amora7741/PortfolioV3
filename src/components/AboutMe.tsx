@@ -1,7 +1,9 @@
+import SectionTitle from "./SectionTitle";
+
 const AboutMe = () => {
   return (
     <section id="about-me" className="flex flex-col gap-4">
-      <h1 className="font-bold uppercase xl:hidden">About Me</h1>
+      <SectionTitle>About Me</SectionTitle>
       <p>
         From a young age, I&apos;ve had a fascination with web development and
         the idea of writing code to bring ideas to life on a screen. This

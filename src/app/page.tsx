@@ -9,7 +9,7 @@ export default function Home() {
     <MouseHoverWrapper>
       <div className="relative mx-auto flex max-w-screen-xl flex-col gap-20 px-6 py-12 md:px-12 md:py-20 xl:flex-row xl:px-16 xl:py-0">
         <Header />
-        <main className="space-y-16 sm:space-y-24 xl:w-1/2 xl:space-y-32 xl:py-24">
+        <main className="relative space-y-16 sm:space-y-24 xl:w-1/2 xl:space-y-32 xl:py-24">
           <AboutMe />
           <Experience />
           <Projects />

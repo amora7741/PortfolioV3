@@ -3,11 +3,12 @@ import { BsArrowRight } from "react-icons/bs";
 
 import Link from "next/link";
 import FocusCards from "./FocusCards";
+import SectionTitle from "./SectionTitle";
 
 const Experience = () => {
   return (
     <section id="experience" className="flex flex-col xl:gap-4">
-      <h1 className="font-bold uppercase xl:hidden">Experience</h1>
+      <SectionTitle>Experience</SectionTitle>
 
       <FocusCards cards={experienceItems} />
 

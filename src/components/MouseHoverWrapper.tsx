@@ -39,7 +39,7 @@ const MouseHoverWrapper = ({ children }: { children: React.ReactNode }) => {
   }, []);
 
   return (
-    <div className="h-screen w-screen overflow-x-hidden" ref={containerRef}>
+    <div className="h-svh w-screen overflow-x-hidden" ref={containerRef}>
       <MouseCursor position={position} />
       {children}
     </div>

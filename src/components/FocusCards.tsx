@@ -30,8 +30,9 @@ export const Card = React.memo(
       onMouseEnter: () => setHovered(index),
       onMouseLeave: () => setHovered(null),
       className: cn(
-        "group -mx-4 grid gap-2 rounded-sm p-4 backdrop-blur-sm transition hover:bg-gray-200/20 sm:grid-cols-[200px_1fr] sm:gap-5 xl:grid-cols-[110px_1fr]",
-        hovered !== null && hovered !== index && "opacity-30",
+        "-mx-4 grid gap-2 rounded-sm p-4 backdrop-blur-sm transition  sm:grid-cols-[200px_1fr] sm:gap-5 xl:grid-cols-[110px_1fr]",
+        !isFlexRow && hovered !== null && hovered !== index && "opacity-30",
+        !isFlexRow && "group hover:bg-gray-200/20",
       ),
     };
 
@@ -52,17 +53,36 @@ export const Card = React.memo(
           />
         )}
         <div className="flex grow flex-col gap-2">
-          <h1 className="flex gap-2 text-base font-semibold group-hover:text-blue-700">
-            <p>
-              {variant === "experience"
-                ? `${(card as ExperienceItem).position} · ${(card as ExperienceItem).company}`
-                : (card as ProjectItem).title}
-            </p>
-            <GoArrowUpRight
-              strokeWidth={0.7}
-              className="-translate-x-1 translate-y-1.5 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"
-            />
-          </h1>
+          {isFlexRow ? (
+            <Link
+              href={card.website!}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="-m-2 flex w-fit gap-2 p-2 text-base font-semibold hover:text-blue-700"
+            >
+              <p>
+                {variant === "experience"
+                  ? `${(card as ExperienceItem).position} · ${(card as ExperienceItem).company}`
+                  : (card as ProjectItem).title}
+              </p>
+              <GoArrowUpRight
+                strokeWidth={0.7}
+                className="-translate-x-1 translate-y-1"
+              />
+            </Link>
+          ) : (
+            <h1 className="flex gap-2 text-base font-semibold group-hover:text-blue-700">
+              <p>
+                {variant === "experience"
+                  ? `${(card as ExperienceItem).position} · ${(card as ExperienceItem).company}`
+                  : (card as ProjectItem).title}
+              </p>
+              <GoArrowUpRight
+                strokeWidth={0.7}
+                className="-translate-x-1 translate-y-1.5 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"
+              />
+            </h1>
+          )}
           <p className="text-pretty text-sm leading-normal tracking-[0.015em]">
             {card.description}
           </p>
@@ -109,7 +129,7 @@ const FocusCards = ({
   const size = useWindowSize().width ?? 0;
 
   return (
-    <div className="flex flex-col gap-6 sm:gap-2">
+    <div className="flex flex-col gap-6 xl:gap-2">
       {cards.map((card, index) => (
         <Card
           key={index}

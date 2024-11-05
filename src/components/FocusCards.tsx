@@ -41,9 +41,9 @@ export const Card = React.memo(
         <Image
           src={(card as ProjectItem).photoUrl}
           alt={(card as ProjectItem).title}
-          className="order-last mt-1 h-auto w-full max-w-60 rounded-sm border-2 object-cover transition-colors group-hover:border-blue-700/50 sm:order-none"
-          width={1920}
-          height={1080}
+          className="order-last mt-1 rounded-sm border-2 object-cover transition-colors group-hover:border-blue-700/50 sm:order-none"
+          width={240}
+          height={140}
         />
       )}
       <div className="flex grow flex-col gap-2">

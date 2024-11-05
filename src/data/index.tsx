@@ -49,7 +49,7 @@ export const projectItems: ProjectItem[] = [
   {
     title: "Realtime Chat App",
     description:
-      "A full-stack chat application which allwos real-time communication between friends.",
+      "A full-stack chat application which allows real-time communication between friends.",
     technologies: [
       "Next.js",
       "TypeScript",

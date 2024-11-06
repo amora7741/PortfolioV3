@@ -2,8 +2,8 @@ import { experienceItems } from "@/data";
 import { BsArrowRight } from "react-icons/bs";
 
 import Link from "next/link";
-import FocusCards from "./FocusCards";
-import SectionTitle from "./SectionTitle";
+import FocusCards from "@/components/FocusCards";
+import SectionTitle from "@/components/SectionTitle";
 
 const Experience = () => {
   return (

@@ -1,6 +1,6 @@
 import { projectItems } from "@/data";
-import FocusCards from "./FocusCards";
-import SectionTitle from "./SectionTitle";
+import FocusCards from "@/components/FocusCards";
+import SectionTitle from "@/components/SectionTitle";
 
 const Projects = () => {
   return (

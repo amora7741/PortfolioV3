@@ -1,5 +1,5 @@
 import { socialItems } from "@/data";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const SocialIcons = () => {

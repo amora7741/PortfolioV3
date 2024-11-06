@@ -22,7 +22,7 @@ const NavbarItem = ({
 }) => (
   <li>
     <Link
-      className={`p-4 ${activeSection === href ? "text-black" : "text-black/50"}`}
+      className={`p-4 ${activeSection === href ? "text-black" : "text-black/30"}`}
       href={`#${href}`}
       onClick={() => setActiveSection(href)}
     >

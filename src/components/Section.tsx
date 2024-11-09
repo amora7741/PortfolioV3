@@ -12,7 +12,7 @@ const Section = ({
   children: React.ReactNode;
 }) => {
   const [ref, entry] = useIntersectionObserver({
-    threshold: 0.3,
+    threshold: 0.2,
     rootMargin: "-30% 0px -30% 0px",
   });
 

@@ -4,14 +4,12 @@ import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
 import FocusCards from "@/components/FocusCards";
 import SectionTitle from "@/components/SectionTitle";
-
+import Section from "@/components/Section";
 const Experience = () => {
   return (
-    <section id="experience" className="flex flex-col xl:gap-4">
+    <Section id="experience">
       <SectionTitle>Experience</SectionTitle>
-
       <FocusCards cards={experienceItems} />
-
       <Link
         target="_blank"
         rel="noopener noreferrer"
@@ -26,7 +24,7 @@ const Experience = () => {
           className="transition-transform duration-100 group-hover:translate-x-2 group-hover:text-blue-700"
         />
       </Link>
-    </section>
+    </Section>
   );
 };
 

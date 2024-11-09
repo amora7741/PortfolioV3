@@ -1,4 +1,5 @@
 import SocialIcons from "@/components/SocialIcons";
+import Navbar from "./Navbar";
 
 const Header = () => {
   return (
@@ -12,6 +13,7 @@ const Header = () => {
           I design user-centric websites that balance aesthetics and
           functionality.
         </p>
+        <Navbar />
       </div>
       <SocialIcons />
     </header>

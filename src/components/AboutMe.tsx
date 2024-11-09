@@ -1,8 +1,9 @@
 import SectionTitle from "@/components/SectionTitle";
+import Section from "@/components/Section";
 
 const AboutMe = () => {
   return (
-    <section id="about-me" className="flex flex-col gap-4">
+    <Section id="about-me">
       <SectionTitle>About Me</SectionTitle>
       <p>
         From a young age, I&apos;ve had a fascination with web development and
@@ -27,7 +28,7 @@ const AboutMe = () => {
         loss, but the experience was great either way! I&apos;m due for a win
         next time!
       </p>
-    </section>
+    </Section>
   );
 };
 

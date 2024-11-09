@@ -1,14 +1,13 @@
 import { projectItems } from "@/data";
 import FocusCards from "@/components/FocusCards";
 import SectionTitle from "@/components/SectionTitle";
-
+import Section from "@/components/Section";
 const Projects = () => {
   return (
-    <section id="projects" className="flex flex-col xl:gap-4">
+    <Section id="projects">
       <SectionTitle>Projects</SectionTitle>
-
       <FocusCards cards={projectItems} variant="project" />
-    </section>
+    </Section>
   );
 };
 

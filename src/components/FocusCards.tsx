@@ -30,7 +30,7 @@ export const Card = React.memo(
       onMouseEnter: () => setHovered(index),
       onMouseLeave: () => setHovered(null),
       className: cn(
-        "-mx-4 grid gap-2 rounded-sm p-4 backdrop-blur-sm transition  sm:grid-cols-[200px_1fr] sm:gap-5 xl:grid-cols-[110px_1fr]",
+        "-mx-4 grid gap-2 rounded-sm p-4 backdrop-blur-sm transition sm:grid-cols-[200px_1fr] sm:gap-5 xl:grid-cols-[110px_1fr]",
         !isFlexRow && hovered !== null && hovered !== index && "opacity-30",
         !isFlexRow && "group hover:bg-card/20",
       ),
@@ -39,7 +39,7 @@ export const Card = React.memo(
     const content = (
       <>
         {variant === "experience" ? (
-          <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground sm:mt-1">
+          <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground/70 sm:mt-1">
             {(card as ExperienceItem).startDate} —{" "}
             {(card as ExperienceItem).endDate}
           </p>

@@ -47,7 +47,7 @@ export const Card = React.memo(
           <Image
             src={(card as ProjectItem).photoUrl}
             alt={(card as ProjectItem).title}
-            className="order-last mt-1 rounded-sm border-2 object-cover transition-colors group-hover:border-blue-700/50 sm:order-none"
+            className="order-last mt-1 rounded-sm border-2 object-cover transition-colors group-hover:border-blue-700/50 dark:group-hover:border-blue-300/70 sm:order-none"
             width={240}
             height={140}
           />
@@ -58,7 +58,7 @@ export const Card = React.memo(
               href={card.website!}
               target="_blank"
               rel="noopener noreferrer"
-              className="-m-2 flex w-fit gap-2 p-2 text-base font-semibold hover:text-blue-700"
+              className="-m-2 flex w-fit gap-2 p-2 text-base font-semibold hover:text-blue-700 dark:hover:text-blue-300"
             >
               <p>
                 {variant === "experience"
@@ -71,7 +71,7 @@ export const Card = React.memo(
               />
             </Link>
           ) : (
-            <h1 className="flex gap-2 text-base font-semibold group-hover:text-blue-700">
+            <h1 className="flex gap-2 text-base font-semibold group-hover:text-blue-700 dark:group-hover:text-blue-300">
               <p>
                 {variant === "experience"
                   ? `${(card as ExperienceItem).position} · ${(card as ExperienceItem).company}`
@@ -90,7 +90,7 @@ export const Card = React.memo(
             {card.technologies.map((technology, index) => (
               <li
                 key={index}
-                className="rounded-full bg-slate-300/20 px-3 py-1 text-sm font-medium leading-5 text-blue-700 transition-colors group-hover:bg-blue-400/10"
+                className="rounded-full bg-slate-300/20 px-3 py-1 text-sm font-medium leading-5 text-blue-700 transition-colors group-hover:bg-blue-400/10 dark:text-blue-300"
               >
                 {technology}
               </li>

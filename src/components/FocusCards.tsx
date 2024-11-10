@@ -90,7 +90,7 @@ export const Card = React.memo(
             {card.technologies.map((technology, index) => (
               <li
                 key={index}
-                className="rounded-full bg-slate-300/20 px-3 py-1 text-sm font-medium leading-5 text-blue-700 transition-colors group-hover:bg-blue-400/10 dark:text-blue-300"
+                className="rounded-full bg-slate-300/20 px-3 py-1 text-sm font-medium leading-5 text-blue-700 transition-colors group-hover:bg-blue-400/10 dark:text-blue-300 dark:group-hover:bg-blue-400/30"
               >
                 {technology}
               </li>

@@ -16,12 +16,12 @@ const Experience = () => {
         href="/Resume.pdf"
         className="group -m-6 flex w-fit items-center gap-2 p-6"
       >
-        <p className="font-medium group-hover:text-blue-700 lg:text-lg">
+        <p className="font-medium group-hover:text-blue-700 dark:group-hover:text-blue-300 lg:text-lg">
           View Full Resume
         </p>
         <BsArrowRight
           strokeWidth={1.25}
-          className="transition-transform duration-100 group-hover:translate-x-2 group-hover:text-blue-700"
+          className="transition-transform duration-100 group-hover:translate-x-2 group-hover:text-blue-700 dark:group-hover:text-blue-300"
         />
       </Link>
     </Section>

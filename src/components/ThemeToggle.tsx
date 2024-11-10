@@ -12,7 +12,7 @@ const ThemeToggle = () => {
       variant="ghost"
       size="icon"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="bg-foreground/5 backdrop-blur-lg"
+      className="bg-muted-foreground/5 backdrop-blur-lg"
     >
       <Sun className="size-5 scale-100 dark:scale-0" />
       <Moon className="absolute size-5 scale-0 dark:scale-100" />

@@ -6,13 +6,13 @@ import { useState } from "react";
 
 const MouseCursor = ({ position }: { position: { x: number; y: number } }) => (
   <div
-    className="mouse-cursor pointer-events-none fixed -z-50 size-[50rem] rounded-full"
+    className="mouse-cursor pointer-events-none fixed -z-50 size-[65rem] rounded-full"
     style={{
       left: position.x,
       top: position.y,
       transform: "translate(-50%, -50%)",
       background:
-        "radial-gradient(circle, rgba(59, 130, 246, 0.07) 0%, rgba(59, 130, 246, 0) 70%)",
+        "radial-gradient(circle, rgba(59, 130, 246, 0.085) 0%, rgba(59, 130, 246, 0) 70%)",
     }}
   />
 );

@@ -76,3 +76,35 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes lakersColorChange {
+  0% {
+    color: #552583;
+  }
+  100% {
+    color: #fdb927;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+.lakers-letter {
+  display: inline-block;
+  animation: lakersColorChange 1s ease-in-out infinite alternate;
+  font-weight: bold;
+}
+
+.lakers-phrase:hover .lakers-letter {
+  animation:
+    lakersColorChange 1s ease-in-out infinite alternate,
+    bounce 1s ease-in-out infinite;
+  transform-origin: bottom;
+}

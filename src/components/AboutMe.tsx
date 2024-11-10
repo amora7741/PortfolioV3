@@ -1,5 +1,6 @@
 import SectionTitle from "@/components/SectionTitle";
 import Section from "@/components/Section";
+import Lakers from "@/components/Lakers";
 
 const AboutMe = () => {
   return (
@@ -22,12 +23,12 @@ const AboutMe = () => {
         Node, and both SQL and NoSQL databases to build robust full-stack
         applications.
       </p>
-      <p>
-        Aside from that, I am a huge fan of the Lakers and have been one my
+      <div>
+        Aside from that, I am a huge fan of the <Lakers /> and have been one my
         whole life. The only time I&apos;ve caught a game in person ended in a
         loss, but the experience was great either way! I&apos;m due for a win
         next time!
-      </p>
+      </div>
     </Section>
   );
 };

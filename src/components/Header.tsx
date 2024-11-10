@@ -9,7 +9,7 @@ const Header = () => {
           Alejandro Mora&#8209;Lopez
         </h1>
         <h2 className="text-xl font-medium">Software Engineer</h2>
-        <p className="max-w-xs">
+        <p className="max-w-xs text-muted-foreground">
           I design user-centric websites that balance aesthetics and
           functionality.
         </p>

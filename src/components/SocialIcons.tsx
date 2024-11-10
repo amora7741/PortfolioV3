@@ -9,7 +9,7 @@ const SocialIcons = () => {
         <Button
           asChild={item.isLink}
           variant="ghost"
-          className="p-0"
+          className="p-0 text-muted-foreground"
           key={item.name}
         >
           {item.isLink ? (

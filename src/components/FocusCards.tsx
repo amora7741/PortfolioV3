@@ -83,7 +83,7 @@ export const Card = React.memo(
               />
             </h1>
           )}
-          <p className="text-pretty text-sm leading-normal tracking-[0.015em]">
+          <p className="text-pretty text-sm leading-normal tracking-[0.015em] text-muted-foreground">
             {card.description}
           </p>
           <ul className="flex flex-wrap gap-2 sm:mt-1">

@@ -28,7 +28,7 @@ const Lakers = () => {
       </span>
 
       {isHovered && (
-        <div className="pointer-events-none fixed left-1/2 top-1/2 z-50 -translate-x-1/2 -translate-y-1/2">
+        <div className="pointer-events-none fixed left-1/2 top-1/2 z-[1000] -translate-x-1/2 -translate-y-1/2">
           <Image
             src="/Lakers.gif"
             width={400}

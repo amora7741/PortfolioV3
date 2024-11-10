@@ -25,7 +25,11 @@ const Section = ({
   }, [entry?.isIntersecting, id, setActiveSection]);
 
   return (
-    <section className="flex flex-col gap-4" id={id} ref={ref}>
+    <section
+      className={`flex flex-col ${id === "about-me" ? "gap-4" : ""}`}
+      id={id}
+      ref={ref}
+    >
       {children}
     </section>
   );

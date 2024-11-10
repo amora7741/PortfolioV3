@@ -12,7 +12,7 @@ const MouseCursor = ({ position }: { position: { x: number; y: number } }) => (
       top: position.y,
       transform: "translate(-50%, -50%)",
       background:
-        "radial-gradient(circle, rgba(59, 130, 246, 0.085) 0%, rgba(59, 130, 246, 0) 70%)",
+        "radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0) 70%)",
     }}
   />
 );

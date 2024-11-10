@@ -90,7 +90,7 @@ export const Card = React.memo(
             {card.technologies.map((technology, index) => (
               <li
                 key={index}
-                className="rounded-full bg-slate-300/20 px-3 py-1 text-sm font-medium leading-5 text-blue-700 transition-colors group-hover:bg-blue-400/10 dark:text-blue-300 dark:group-hover:bg-blue-400/30"
+                className="rounded-full bg-slate-300/20 px-3 py-1 text-sm font-medium leading-5 text-blue-700 transition-colors group-hover:bg-blue-400/10 dark:text-blue-300 dark:group-hover:bg-blue-400/20"
               >
                 {technology}
               </li>
@@ -129,7 +129,7 @@ const FocusCards = ({
   const size = useWindowSize().width ?? 0;
 
   return (
-    <div className="flex flex-col gap-6 xl:gap-2">
+    <div className="flex flex-col gap-6 sm:gap-12 xl:gap-2">
       {cards.map((card, index) => (
         <Card
           key={index}

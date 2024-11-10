@@ -92,7 +92,7 @@ export const projectItems: ProjectItem[] = [
   {
     title: "Breeze",
     description:
-      "A (mock) shopping app, utilizing FakeStoreAPI to fetch purchasble items along with their price and review rating. Shop through a wide assortment of products today!",
+      "A (mock) shopping app, utilizing FakeStoreAPI to fetch purchasable items along with their price and review rating. Shop through a wide assortment of products today!",
     technologies: ["React.js", "JavaScript", "CSS"],
     links: [
       {

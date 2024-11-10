@@ -22,12 +22,12 @@ const NavbarItem = ({
 }) => (
   <li>
     <Link
-      className={`group flex w-fit items-center gap-4 p-4 ${activeSection === href ? "text-foreground" : "text-foreground/30"}`}
+      className={`group flex w-fit items-center gap-4 p-4 ${activeSection === href ? "text-muted-foreground" : "text-muted-foreground/30"}`}
       href={`#${href}`}
       onClick={() => setActiveSection(href)}
     >
       <span
-        className={`h-0.5 w-10 group-hover:w-14 group-hover:bg-foreground ${activeSection === href ? "w-14 bg-foreground" : "bg-foreground/30"}`}
+        className={`h-0.5 w-10 group-hover:w-14 group-hover:bg-muted-foreground ${activeSection === href ? "w-14 bg-muted-foreground" : "bg-muted-foreground/30"}`}
       />
       <p className="group-hover:text-foreground">{name}</p>
     </Link>
@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <nav className="mt-16 hidden xl:block">
-      <ul className="-mx-4 text-xs font-bold uppercase tracking-widest">
+      <ul className="-mx-4 text-sm font-bold uppercase tracking-wider">
         {NavbarItems.map((item, i) => (
           <NavbarItem
             key={i}

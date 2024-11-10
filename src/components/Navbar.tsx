@@ -27,7 +27,7 @@ const NavbarItem = ({
       onClick={() => setActiveSection(href)}
     >
       <span
-        className={`h-0.5 w-10 bg-black/30 group-hover:w-14 group-hover:bg-black ${activeSection === href ? "w-14 bg-black" : ""}`}
+        className={`h-0.5 w-10 group-hover:w-14 group-hover:bg-black ${activeSection === href ? "w-14 bg-black" : "bg-black/30"}`}
       />
       <p className="group-hover:text-black">{name}</p>
     </Link>

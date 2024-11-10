@@ -22,7 +22,7 @@ const NavbarItem = ({
 }) => (
   <li>
     <Link
-      className={`group flex items-center gap-4 p-4 ${activeSection === href ? "text-black" : "text-black/30"}`}
+      className={`group flex w-fit items-center gap-4 p-4 ${activeSection === href ? "text-black" : "text-black/30"}`}
       href={`#${href}`}
       onClick={() => setActiveSection(href)}
     >

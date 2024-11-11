@@ -20,7 +20,7 @@ export const socialItems: SocialItem[] = [
     name: "Email",
     icon: IoMdMail,
     toast: {
-      message: "Email copied to clipboard",
+      message: "Email copied to clipboard!",
       clipboardText: "mora7741@gmail.com",
     },
   },

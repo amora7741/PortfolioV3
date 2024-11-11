@@ -29,7 +29,7 @@ const NavbarItem = ({
       <span
         className={`h-0.5 w-10 group-hover:w-14 group-hover:bg-muted-foreground ${activeSection === href ? "w-14 bg-muted-foreground" : "bg-muted-foreground/30"}`}
       />
-      <p className="group-hover:text-foreground">{name}</p>
+      <p className="group-hover:text-muted-foreground">{name}</p>
     </Link>
   </li>
 );

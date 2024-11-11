@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const MouseCursor = () => {
-  const [position, setPosition] = useState({ x: window.innerWidth, y: 0 });
+  const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const updateMousePosition = (e: MouseEvent) => {
     setPosition({ x: e.clientX, y: e.clientY });

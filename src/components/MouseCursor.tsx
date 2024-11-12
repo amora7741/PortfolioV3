@@ -20,9 +20,8 @@ const MouseCursor = () => {
     <div
       className="mouse-cursor pointer-events-none fixed -z-50 size-[60rem] rounded-full"
       style={{
-        left: position.x,
-        top: position.y,
-        transform: "translate(-50%, -50%)",
+        willChange: "transform",
+        transform: `translate3d(calc(${position.x}px - 50%), calc(${position.y}px - 50%), 0)`,
         background:
           "radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0) 70%)",
       }}

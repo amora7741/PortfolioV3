@@ -6,10 +6,6 @@
   display: none;
 }
 
-.about-me-text {
-  font-size: 1.025rem;
-}
-
 @media (hover: hover) {
   .mouse-cursor {
     display: block;

@@ -34,6 +34,8 @@ const Lakers = () => {
             width={400}
             height={250}
             alt="Lakers Celebration"
+            unoptimized
+            loading="eager"
           />
         </div>
       )}

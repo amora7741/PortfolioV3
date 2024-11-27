@@ -22,8 +22,7 @@ const MouseCursor = () => {
       style={{
         willChange: "transform",
         transform: `translate3d(calc(${position.x}px - 50%), calc(${position.y}px - 50%), 0)`,
-        background:
-          "radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0) 70%)",
+        background: "var(--cursor-gradient)",
       }}
     />
   );

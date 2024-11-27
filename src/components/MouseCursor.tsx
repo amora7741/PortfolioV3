@@ -18,7 +18,7 @@ const MouseCursor = () => {
 
   return (
     <div
-      className="mouse-cursor pointer-events-none fixed -z-50 size-[60rem] rounded-full"
+      className="mouse-cursor pointer-events-none fixed -z-50 size-[55rem] rounded-full"
       style={{
         willChange: "transform",
         transform: `translate3d(calc(${position.x}px - 50%), calc(${position.y}px - 50%), 0)`,

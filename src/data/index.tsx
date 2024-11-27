@@ -31,7 +31,7 @@ export const experienceItems: ExperienceItem[] = [
     company: "UpUnikSelf Inc.",
     position: "Frontend Developer",
     startDate: "Sep",
-    endDate: "Oct 2024",
+    endDate: "Nov 2024",
     description:
       "Collaborated with a development team of 8 to enhance the user interface of the company website. Designed and maintained reusable components to ensure consistency and scalability across the site, optimized page performance, and improved the overall user experience.",
     technologies: [
